@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78860EF4265C013B00AE0A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860EF3265C013B00AE0A25 /* AppDelegate.swift */; };
+		78860EFD265C013C00AE0A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78860EFC265C013C00AE0A25 /* Assets.xcassets */; };
+		78860F00265C013C00AE0A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78860EFE265C013C00AE0A25 /* LaunchScreen.storyboard */; };
+		78860F0B265C013C00AE0A25 /* CryptoWalletVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F0A265C013C00AE0A25 /* CryptoWalletVIPERTests.swift */; };
+		78860F16265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F15265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift */; };
+		78860F2B265C01D100AE0A25 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F2A265C01D100AE0A25 /* Crypto.swift */; };
+		78860F2D265C031300AE0A25 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F2C265C031300AE0A25 /* Presentable.swift */; };
+		78860F2F265C032C00AE0A25 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F2E265C032C00AE0A25 /* Routable.swift */; };
+		78860F31265C033900AE0A25 /* Interactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F30265C033900AE0A25 /* Interactable.swift */; };
+		78860F33265C034C00AE0A25 /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F32265C034C00AE0A25 /* Viewable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78860F07265C013C00AE0A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78860EE8265C013B00AE0A25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78860EEF265C013B00AE0A25;
+			remoteInfo = CryptoWalletVIPER;
+		};
+		78860F12265C013D00AE0A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78860EE8265C013B00AE0A25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78860EEF265C013B00AE0A25;
+			remoteInfo = CryptoWalletVIPER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78860EF0265C013B00AE0A25 /* CryptoWalletVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWalletVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78860EF3265C013B00AE0A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78860EFC265C013C00AE0A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78860EFF265C013C00AE0A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78860F01265C013C00AE0A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78860F06265C013C00AE0A25 /* CryptoWalletVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78860F0A265C013C00AE0A25 /* CryptoWalletVIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletVIPERTests.swift; sourceTree = "<group>"; };
+		78860F0C265C013D00AE0A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78860F11265C013D00AE0A25 /* CryptoWalletVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78860F15265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletVIPERUITests.swift; sourceTree = "<group>"; };
+		78860F17265C013D00AE0A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78860F2A265C01D100AE0A25 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		78860F2C265C031300AE0A25 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		78860F2E265C032C00AE0A25 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		78860F30265C033900AE0A25 /* Interactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactable.swift; sourceTree = "<group>"; };
+		78860F32265C034C00AE0A25 /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78860EED265C013B00AE0A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78860F03265C013C00AE0A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78860F0E265C013D00AE0A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78860EE7265C013B00AE0A25 = {
+			isa = PBXGroup;
+			children = (
+				78860EF2265C013B00AE0A25 /* CryptoWalletVIPER */,
+				78860F09265C013C00AE0A25 /* CryptoWalletVIPERTests */,
+				78860F14265C013D00AE0A25 /* CryptoWalletVIPERUITests */,
+				78860EF1265C013B00AE0A25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78860EF1265C013B00AE0A25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78860EF0265C013B00AE0A25 /* CryptoWalletVIPER.app */,
+				78860F06265C013C00AE0A25 /* CryptoWalletVIPERTests.xctest */,
+				78860F11265C013D00AE0A25 /* CryptoWalletVIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78860EF2265C013B00AE0A25 /* CryptoWalletVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				78860EF3265C013B00AE0A25 /* AppDelegate.swift */,
+				78860F25265C015700AE0A25 /* Entities */,
+				78860F23265C014100AE0A25 /* Protocols */,
+				78860F24265C014B00AE0A25 /* Resources */,
+				78860F26265C015F00AE0A25 /* Screens */,
+			);
+			path = CryptoWalletVIPER;
+			sourceTree = "<group>";
+		};
+		78860F09265C013C00AE0A25 /* CryptoWalletVIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				78860F0A265C013C00AE0A25 /* CryptoWalletVIPERTests.swift */,
+				78860F0C265C013D00AE0A25 /* Info.plist */,
+			);
+			path = CryptoWalletVIPERTests;
+			sourceTree = "<group>";
+		};
+		78860F14265C013D00AE0A25 /* CryptoWalletVIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78860F15265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift */,
+				78860F17265C013D00AE0A25 /* Info.plist */,
+			);
+			path = CryptoWalletVIPERUITests;
+			sourceTree = "<group>";
+		};
+		78860F23265C014100AE0A25 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				78860F2C265C031300AE0A25 /* Presentable.swift */,
+				78860F2E265C032C00AE0A25 /* Routable.swift */,
+				78860F30265C033900AE0A25 /* Interactable.swift */,
+				78860F32265C034C00AE0A25 /* Viewable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		78860F24265C014B00AE0A25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78860EFC265C013C00AE0A25 /* Assets.xcassets */,
+				78860EFE265C013C00AE0A25 /* LaunchScreen.storyboard */,
+				78860F01265C013C00AE0A25 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78860F25265C015700AE0A25 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				78860F2A265C01D100AE0A25 /* Crypto.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		78860F26265C015F00AE0A25 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				78860F29265C01C700AE0A25 /* Login */,
+				78860F28265C01C100AE0A25 /* CryptoDetail */,
+				78860F27265C01B700AE0A25 /* CryptoList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		78860F27265C01B700AE0A25 /* CryptoList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CryptoList;
+			sourceTree = "<group>";
+		};
+		78860F28265C01C100AE0A25 /* CryptoDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CryptoDetail;
+			sourceTree = "<group>";
+		};
+		78860F29265C01C700AE0A25 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78860F1A265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPER" */;
+			buildPhases = (
+				78860EEC265C013B00AE0A25 /* Sources */,
+				78860EED265C013B00AE0A25 /* Frameworks */,
+				78860EEE265C013B00AE0A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoWalletVIPER;
+			productName = CryptoWalletVIPER;
+			productReference = 78860EF0265C013B00AE0A25 /* CryptoWalletVIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78860F05265C013C00AE0A25 /* CryptoWalletVIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78860F1D265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPERTests" */;
+			buildPhases = (
+				78860F02265C013C00AE0A25 /* Sources */,
+				78860F03265C013C00AE0A25 /* Frameworks */,
+				78860F04265C013C00AE0A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78860F08265C013C00AE0A25 /* PBXTargetDependency */,
+			);
+			name = CryptoWalletVIPERTests;
+			productName = CryptoWalletVIPERTests;
+			productReference = 78860F06265C013C00AE0A25 /* CryptoWalletVIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78860F10265C013D00AE0A25 /* CryptoWalletVIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78860F20265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPERUITests" */;
+			buildPhases = (
+				78860F0D265C013D00AE0A25 /* Sources */,
+				78860F0E265C013D00AE0A25 /* Frameworks */,
+				78860F0F265C013D00AE0A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78860F13265C013D00AE0A25 /* PBXTargetDependency */,
+			);
+			name = CryptoWalletVIPERUITests;
+			productName = CryptoWalletVIPERUITests;
+			productReference = 78860F11265C013D00AE0A25 /* CryptoWalletVIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78860EE8265C013B00AE0A25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					78860EEF265C013B00AE0A25 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					78860F05265C013C00AE0A25 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 78860EEF265C013B00AE0A25;
+					};
+					78860F10265C013D00AE0A25 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 78860EEF265C013B00AE0A25;
+					};
+				};
+			};
+			buildConfigurationList = 78860EEB265C013B00AE0A25 /* Build configuration list for PBXProject "CryptoWalletVIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78860EE7265C013B00AE0A25;
+			productRefGroup = 78860EF1265C013B00AE0A25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */,
+				78860F05265C013C00AE0A25 /* CryptoWalletVIPERTests */,
+				78860F10265C013D00AE0A25 /* CryptoWalletVIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78860EEE265C013B00AE0A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78860F00265C013C00AE0A25 /* LaunchScreen.storyboard in Resources */,
+				78860EFD265C013C00AE0A25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78860F04265C013C00AE0A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78860F0F265C013D00AE0A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78860EEC265C013B00AE0A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78860F2B265C01D100AE0A25 /* Crypto.swift in Sources */,
+				78860F33265C034C00AE0A25 /* Viewable.swift in Sources */,
+				78860EF4265C013B00AE0A25 /* AppDelegate.swift in Sources */,
+				78860F2D265C031300AE0A25 /* Presentable.swift in Sources */,
+				78860F2F265C032C00AE0A25 /* Routable.swift in Sources */,
+				78860F31265C033900AE0A25 /* Interactable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78860F02265C013C00AE0A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78860F0B265C013C00AE0A25 /* CryptoWalletVIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78860F0D265C013D00AE0A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78860F16265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78860F08265C013C00AE0A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */;
+			targetProxy = 78860F07265C013C00AE0A25 /* PBXContainerItemProxy */;
+		};
+		78860F13265C013D00AE0A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */;
+			targetProxy = 78860F12265C013D00AE0A25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78860EFE265C013C00AE0A25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78860EFF265C013C00AE0A25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78860F18265C013D00AE0A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78860F19265C013D00AE0A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78860F1B265C013D00AE0A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3925K7RKU8;
+				INFOPLIST_FILE = CryptoWalletVIPER/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78860F1C265C013D00AE0A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3925K7RKU8;
+				INFOPLIST_FILE = CryptoWalletVIPER/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78860F1E265C013D00AE0A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3925K7RKU8;
+				INFOPLIST_FILE = CryptoWalletVIPERTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWalletVIPER.app/CryptoWalletVIPER";
+			};
+			name = Debug;
+		};
+		78860F1F265C013D00AE0A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3925K7RKU8;
+				INFOPLIST_FILE = CryptoWalletVIPERTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWalletVIPER.app/CryptoWalletVIPER";
+			};
+			name = Release;
+		};
+		78860F21265C013D00AE0A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3925K7RKU8;
+				INFOPLIST_FILE = CryptoWalletVIPERUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoWalletVIPER;
+			};
+			name = Debug;
+		};
+		78860F22265C013D00AE0A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3925K7RKU8;
+				INFOPLIST_FILE = CryptoWalletVIPERUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoWalletVIPER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78860EEB265C013B00AE0A25 /* Build configuration list for PBXProject "CryptoWalletVIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78860F18265C013D00AE0A25 /* Debug */,
+				78860F19265C013D00AE0A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78860F1A265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78860F1B265C013D00AE0A25 /* Debug */,
+				78860F1C265C013D00AE0A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78860F1D265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78860F1E265C013D00AE0A25 /* Debug */,
+				78860F1F265C013D00AE0A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78860F20265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78860F21265C013D00AE0A25 /* Debug */,
+				78860F22265C013D00AE0A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78860EE8265C013B00AE0A25 /* Project object */;
+}
