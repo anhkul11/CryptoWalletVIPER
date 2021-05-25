@@ -7,8 +7,6 @@
 
 import Foundation
 
-protocol Presentable {
-  var view: Viewable { get }
-  var interactor: Interactable { get }
-  var router: Routable { get }
+protocol Presentable: class {
+    
 }

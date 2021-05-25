@@ -21,3 +21,11 @@ struct Crypto: Codable {
     case sell = "sell_price"
   }
 }
+
+struct CryptoListResponse: Codable {
+    let cryptos: [Crypto]
+    
+    enum CodingKeys: String, CodingKey {
+      case cryptos = "data"
+    }
+}
