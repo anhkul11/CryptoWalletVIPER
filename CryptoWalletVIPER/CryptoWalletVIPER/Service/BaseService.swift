@@ -31,7 +31,7 @@ open class ServiceTask: ServiceProtocol {
 
     public var httpHeader: [String: String]? = ["content-type": "application/json"]
     public var timeoutInterval: TimeInterval = 60
-    public var cachePolicy: URLRequest.CachePolicy = .returnCacheDataElseLoad
+    public var cachePolicy: URLRequest.CachePolicy = .reloadRevalidatingCacheData
     static let taskSession: URLSession = URLSession(configuration: .default)
 
     public init() {}

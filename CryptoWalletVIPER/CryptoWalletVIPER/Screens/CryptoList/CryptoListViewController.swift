@@ -8,7 +8,8 @@
 import UIKit
 
 protocol CryptoListViewable: Viewable {
-    func reloadTableView(with viewModels: [CryptoInfoViewModel])
+    var viewModels: BehaviorRelay<[CryptoInfoViewModel]> { get }
+    func endRefreshing()
 }
 
 final class CryptoListViewController: UIViewController, CryptoListViewable {
@@ -19,7 +20,9 @@ final class CryptoListViewController: UIViewController, CryptoListViewable {
     @IBOutlet private weak var favoritesButton: UIButton!
     @IBOutlet private weak var tableView: UITableView!
     
-    private var viewModels: [CryptoInfoViewModel] = []
+    let viewModels = BehaviorRelay<[CryptoInfoViewModel]>(value: [])
+    private lazy var refreshControl = UIRefreshControl()
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +51,22 @@ extension CryptoListViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: String(describing: CryptoInfoTableViewCell.self), bundle: nil),
                            forCellReuseIdentifier: String(describing: CryptoInfoTableViewCell.self))
+        tableView.refreshControl = refreshControl
+        
+        refreshControl.rx.controlEvent(.valueChanged)
+            .bind(to: presenter.refreshDataRelay)
+            .disposed(by: disposeBag)
+        
+        viewModels.asDriver()
+            .drive(onNext: { [weak self] viewModels in
+                self?.tableView.reloadData()
+            }).disposed(by: disposeBag)
+        
+        searchBar.rx.text
+            .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
+            .compactMap { $0 }
+            .bind(to: presenter.filterTextRelay)
+            .disposed(by: disposeBag)
     }
     
     private func configureNavigationBar() {
@@ -57,13 +76,12 @@ extension CryptoListViewController {
 
 // MARK: - CryptoListViewable
 extension CryptoListViewController {
-    func reloadTableView(with viewModels: [CryptoInfoViewModel]) {
-        self.viewModels = viewModels
-        tableView.reloadData()
-    }
-    
     func showError(with error: ServiceError) {
         
+    }
+    
+    func endRefreshing() {
+        refreshControl.endRefreshing()
     }
 }
 
@@ -71,12 +89,13 @@ extension CryptoListViewController {
 extension CryptoListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+        presenter.filterTextRelay.accept(searchBar.text ?? "")
     }
 }
 
 extension CryptoListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModels.count
+        return viewModels.value.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -87,7 +106,7 @@ extension CryptoListViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CryptoInfoTableViewCell.self), for: indexPath) as? CryptoInfoTableViewCell else {
             return UITableViewCell()
         }
-        cell.configureView(with: viewModels[indexPath.row])
+        cell.configureView(with: viewModels.value[indexPath.row])
         return cell
     }
 }
