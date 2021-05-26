@@ -10,11 +10,13 @@ import Foundation
 protocol CryptoListInteractableListener: class {
     func onSearchCryptoListSuccess(_ cryptoList: [Crypto])
     func onSearchError(_ error: Error)
+    func onDidChangeFavoriteList()
 }
 
 protocol CryptoListInteractable: Interactable {
     var presenter: CryptoListInteractableListener? { get set }
     func getCryptoList()
+    func updateFavorite(for coinBase: String)
 }
 
 final class CryptoListInteractor: CryptoListInteractable {
@@ -28,6 +30,11 @@ final class CryptoListInteractor: CryptoListInteractable {
             presenter?.onSearchError(error)
         }
         CoinService().search(with: CoinService.SearchCoinRequest(), onSuccess: onSuccess, onError: onError)
+    }
+    
+    func updateFavorite(for coinBase: String) {
+        Crypto.changeFavorite(for: coinBase)
+        presenter?.onDidChangeFavoriteList()
     }
 }
 

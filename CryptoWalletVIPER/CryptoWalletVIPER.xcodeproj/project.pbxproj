@@ -21,6 +21,8 @@
 		0F3836F7265CFB7D009852B8 /* CryptoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3836F5265CFB7D009852B8 /* CryptoInfoTableViewCell.swift */; };
 		0F3836F8265CFB7D009852B8 /* CryptoInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3836F6265CFB7D009852B8 /* CryptoInfoTableViewCell.xib */; };
 		0F38370A265D0BD3009852B8 /* ModuleImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F383709265D0BD3009852B8 /* ModuleImport.swift */; };
+		0FAA0A97265E9AC300F69D4D /* FavoriteCryptos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA0A96265E9AC300F69D4D /* FavoriteCryptos.swift */; };
+		0FAA0A9C265E9C7800F69D4D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA0A9B265E9C7800F69D4D /* Constant.swift */; };
 		2558A8886A57D9869AD16859 /* Pods_CryptoWalletVIPER_CryptoWalletVIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511B907266D58B6591782416 /* Pods_CryptoWalletVIPER_CryptoWalletVIPERUITests.framework */; };
 		5D7BAAD2AF4FE8ADECF0F888 /* Pods_CryptoWalletVIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FA7BD4563A4B42AC6346D2 /* Pods_CryptoWalletVIPERTests.framework */; };
 		69FAC697E056183AB451F30B /* Pods_CryptoWalletVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927CCFED75BE04CF4F40F998 /* Pods_CryptoWalletVIPER.framework */; };
@@ -68,6 +70,8 @@
 		0F3836F5265CFB7D009852B8 /* CryptoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoInfoTableViewCell.swift; sourceTree = "<group>"; };
 		0F3836F6265CFB7D009852B8 /* CryptoInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoInfoTableViewCell.xib; sourceTree = "<group>"; };
 		0F383709265D0BD3009852B8 /* ModuleImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleImport.swift; sourceTree = "<group>"; };
+		0FAA0A96265E9AC300F69D4D /* FavoriteCryptos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCryptos.swift; sourceTree = "<group>"; };
+		0FAA0A9B265E9C7800F69D4D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		10FA7BD4563A4B42AC6346D2 /* Pods_CryptoWalletVIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWalletVIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124BABA6348236E7577D106E /* Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D9C8913AEE8A5EBD726321C /* Pods-CryptoWalletVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletVIPER.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletVIPER/Pods-CryptoWalletVIPER.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				0F264D5C265CD72100949D21 /* UIViewController+Extension.swift */,
 				0F3836EC265CEF25009852B8 /* VIPERBuilder.swift */,
 				0F383709265D0BD3009852B8 /* ModuleImport.swift */,
+				0FAA0A9B265E9C7800F69D4D /* Constant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				78860F2A265C01D100AE0A25 /* Crypto.swift */,
+				0FAA0A96265E9AC300F69D4D /* FavoriteCryptos.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -537,10 +543,12 @@
 			files = (
 				0F264D5D265CD72100949D21 /* UIViewController+Extension.swift in Sources */,
 				0F264D6C265CDC1D00949D21 /* CryptoListInteractor.swift in Sources */,
+				0FAA0A97265E9AC300F69D4D /* FavoriteCryptos.swift in Sources */,
 				0F264D67265CDC1500949D21 /* CryptoListRouter.swift in Sources */,
 				0F0582BE265CB268003A5A5E /* CryptoDetailViewController.swift in Sources */,
 				0F3836F7265CFB7D009852B8 /* CryptoInfoTableViewCell.swift in Sources */,
 				0F0582B4265CB22E003A5A5E /* LoginViewController.swift in Sources */,
+				0FAA0A9C265E9C7800F69D4D /* Constant.swift in Sources */,
 				78860F2B265C01D100AE0A25 /* Crypto.swift in Sources */,
 				78860F33265C034C00AE0A25 /* Viewable.swift in Sources */,
 				78860EF4265C013B00AE0A25 /* AppDelegate.swift in Sources */,
@@ -650,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -705,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

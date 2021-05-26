@@ -8,6 +8,7 @@
 import UIKit
 
 protocol CryptoListViewable: Viewable {
+    var presenter: CryptoListPresentable! { get set }
     var viewModels: BehaviorRelay<[CryptoInfoViewModel]> { get }
     func endRefreshing()
 }
@@ -17,12 +18,16 @@ final class CryptoListViewController: UIViewController, CryptoListViewable {
     var presenter: CryptoListPresentable!
     
     @IBOutlet private weak var searchBar: UISearchBar!
+    @IBOutlet private weak var allButton: UIButton!
     @IBOutlet private weak var favoritesButton: UIButton!
     @IBOutlet private weak var tableView: UITableView!
     
     let viewModels = BehaviorRelay<[CryptoInfoViewModel]>(value: [])
     private lazy var refreshControl = UIRefreshControl()
     private let disposeBag = DisposeBag()
+    private lazy var didTapFavorite: ((String) -> ())? = { [weak presenter] base in
+        presenter?.changFavoriteRelay.accept(base)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +72,20 @@ extension CryptoListViewController {
             .compactMap { $0 }
             .bind(to: presenter.filterTextRelay)
             .disposed(by: disposeBag)
+        
+        favoritesButton.setTitleColor(.lightGray, for: .normal)
+        allButton.setTitleColor(.link, for: .normal)
+        
+        let allButtonTap = allButton.rx.tap.map { false }
+        let favoriteButtonTap = favoritesButton.rx.tap.map { true }
+        
+        Observable.merge(allButtonTap, favoriteButtonTap)
+            .do(onNext: { [weak self] isFavorites in
+                self?.favoritesButton.setTitleColor(isFavorites ? .link : .lightGray, for: .normal)
+                self?.allButton.setTitleColor(isFavorites ? .lightGray : .link, for: .normal)
+            })
+            .bind(to: presenter.filterFavoritesRelay)
+            .disposed(by: disposeBag)
     }
     
     private func configureNavigationBar() {
@@ -106,7 +125,7 @@ extension CryptoListViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CryptoInfoTableViewCell.self), for: indexPath) as? CryptoInfoTableViewCell else {
             return UITableViewCell()
         }
-        cell.configureView(with: viewModels.value[indexPath.row])
+        cell.configureView(with: viewModels.value[indexPath.row], favoriteAction: didTapFavorite)
         return cell
     }
 }

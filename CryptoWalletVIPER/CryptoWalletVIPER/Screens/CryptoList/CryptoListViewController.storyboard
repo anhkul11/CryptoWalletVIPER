@@ -17,24 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qTq-Dl-m8Z">
-                                <rect key="frame" x="8" y="44" width="398" height="56"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qTq-Dl-m8Z">
+                                <rect key="frame" x="8" y="44" width="398" height="94"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aSp-e6-wtk">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlT-lF-KBm">
-                                        <rect key="frame" x="358" y="0.0" width="40" height="56"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="HBh-Kv-vqU"/>
-                                        </constraints>
-                                        <state key="normal" image="star.fill" catalog="system"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-Mg-GnA">
+                                        <rect key="frame" x="0.0" y="64" width="398" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2F-hS-J2p">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="30"/>
+                                                <state key="normal" title="All"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxo-g8-0jE">
+                                                <rect key="frame" x="203" y="0.0" width="195" height="30"/>
+                                                <state key="normal" title="Favorites"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fFa-HK-Baa">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -51,7 +57,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="favoritesButton" destination="hlT-lF-KBm" id="yNB-kX-M3k"/>
+                        <outlet property="allButton" destination="S2F-hS-J2p" id="zKm-Ze-SHw"/>
+                        <outlet property="favoritesButton" destination="Rxo-g8-0jE" id="FWK-FY-2Ig"/>
                         <outlet property="searchBar" destination="aSp-e6-wtk" id="nnt-Pr-EPB"/>
                         <outlet property="tableView" destination="fFa-HK-Baa" id="qxc-8b-Z1F"/>
                     </connections>
@@ -62,7 +69,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
