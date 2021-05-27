@@ -23,14 +23,15 @@
 		0F38370A265D0BD3009852B8 /* ModuleImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F383709265D0BD3009852B8 /* ModuleImport.swift */; };
 		0FAA0A97265E9AC300F69D4D /* FavoriteCryptos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA0A96265E9AC300F69D4D /* FavoriteCryptos.swift */; };
 		0FAA0A9C265E9C7800F69D4D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA0A9B265E9C7800F69D4D /* Constant.swift */; };
-		2558A8886A57D9869AD16859 /* Pods_CryptoWalletVIPER_CryptoWalletVIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511B907266D58B6591782416 /* Pods_CryptoWalletVIPER_CryptoWalletVIPERUITests.framework */; };
+		0FB36BE0265FE5FE00B01E5E /* MockCryptoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB36BDF265FE5FE00B01E5E /* MockCryptoListRouter.swift */; };
+		0FB36BE8265FE60B00B01E5E /* MockCryptoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB36BE7265FE60B00B01E5E /* MockCryptoListInteractor.swift */; };
+		0FB36BED265FE61000B01E5E /* MockCryptoListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB36BEC265FE61000B01E5E /* MockCryptoListViewable.swift */; };
 		5D7BAAD2AF4FE8ADECF0F888 /* Pods_CryptoWalletVIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FA7BD4563A4B42AC6346D2 /* Pods_CryptoWalletVIPERTests.framework */; };
 		69FAC697E056183AB451F30B /* Pods_CryptoWalletVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927CCFED75BE04CF4F40F998 /* Pods_CryptoWalletVIPER.framework */; };
 		78860EF4265C013B00AE0A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860EF3265C013B00AE0A25 /* AppDelegate.swift */; };
 		78860EFD265C013C00AE0A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78860EFC265C013C00AE0A25 /* Assets.xcassets */; };
 		78860F00265C013C00AE0A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78860EFE265C013C00AE0A25 /* LaunchScreen.storyboard */; };
 		78860F0B265C013C00AE0A25 /* CryptoWalletVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F0A265C013C00AE0A25 /* CryptoWalletVIPERTests.swift */; };
-		78860F16265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F15265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift */; };
 		78860F2B265C01D100AE0A25 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F2A265C01D100AE0A25 /* Crypto.swift */; };
 		78860F2D265C031300AE0A25 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F2C265C031300AE0A25 /* Presentable.swift */; };
 		78860F2F265C032C00AE0A25 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F2E265C032C00AE0A25 /* Routable.swift */; };
@@ -40,13 +41,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		78860F07265C013C00AE0A25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78860EE8265C013B00AE0A25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78860EEF265C013B00AE0A25;
-			remoteInfo = CryptoWalletVIPER;
-		};
-		78860F12265C013D00AE0A25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78860EE8265C013B00AE0A25 /* Project object */;
 			proxyType = 1;
@@ -72,6 +66,9 @@
 		0F383709265D0BD3009852B8 /* ModuleImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleImport.swift; sourceTree = "<group>"; };
 		0FAA0A96265E9AC300F69D4D /* FavoriteCryptos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCryptos.swift; sourceTree = "<group>"; };
 		0FAA0A9B265E9C7800F69D4D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0FB36BDF265FE5FE00B01E5E /* MockCryptoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCryptoListRouter.swift; sourceTree = "<group>"; };
+		0FB36BE7265FE60B00B01E5E /* MockCryptoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCryptoListInteractor.swift; sourceTree = "<group>"; };
+		0FB36BEC265FE61000B01E5E /* MockCryptoListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCryptoListViewable.swift; sourceTree = "<group>"; };
 		10FA7BD4563A4B42AC6346D2 /* Pods_CryptoWalletVIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWalletVIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124BABA6348236E7577D106E /* Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D9C8913AEE8A5EBD726321C /* Pods-CryptoWalletVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWalletVIPER.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWalletVIPER/Pods-CryptoWalletVIPER.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,9 +83,6 @@
 		78860F06265C013C00AE0A25 /* CryptoWalletVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78860F0A265C013C00AE0A25 /* CryptoWalletVIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletVIPERTests.swift; sourceTree = "<group>"; };
 		78860F0C265C013D00AE0A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78860F11265C013D00AE0A25 /* CryptoWalletVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78860F15265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletVIPERUITests.swift; sourceTree = "<group>"; };
-		78860F17265C013D00AE0A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78860F2A265C01D100AE0A25 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		78860F2C265C031300AE0A25 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		78860F2E265C032C00AE0A25 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
@@ -113,14 +107,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D7BAAD2AF4FE8ADECF0F888 /* Pods_CryptoWalletVIPERTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78860F0E265C013D00AE0A25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2558A8886A57D9869AD16859 /* Pods_CryptoWalletVIPER_CryptoWalletVIPERUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +142,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0FB36BDE265FE5E300B01E5E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0FB36BDF265FE5FE00B01E5E /* MockCryptoListRouter.swift */,
+				0FB36BE7265FE60B00B01E5E /* MockCryptoListInteractor.swift */,
+				0FB36BEC265FE61000B01E5E /* MockCryptoListViewable.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		4BC0DA1CF75C53948FE303C6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +170,6 @@
 			children = (
 				78860EF2265C013B00AE0A25 /* CryptoWalletVIPER */,
 				78860F09265C013C00AE0A25 /* CryptoWalletVIPERTests */,
-				78860F14265C013D00AE0A25 /* CryptoWalletVIPERUITests */,
 				78860EF1265C013B00AE0A25 /* Products */,
 				4BC0DA1CF75C53948FE303C6 /* Pods */,
 				D65BFE0426076D6EBB5EE2E4 /* Frameworks */,
@@ -186,7 +181,6 @@
 			children = (
 				78860EF0265C013B00AE0A25 /* CryptoWalletVIPER.app */,
 				78860F06265C013C00AE0A25 /* CryptoWalletVIPERTests.xctest */,
-				78860F11265C013D00AE0A25 /* CryptoWalletVIPERUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,19 +202,11 @@
 		78860F09265C013C00AE0A25 /* CryptoWalletVIPERTests */ = {
 			isa = PBXGroup;
 			children = (
+				0FB36BDE265FE5E300B01E5E /* Mock */,
 				78860F0A265C013C00AE0A25 /* CryptoWalletVIPERTests.swift */,
 				78860F0C265C013D00AE0A25 /* Info.plist */,
 			);
 			path = CryptoWalletVIPERTests;
-			sourceTree = "<group>";
-		};
-		78860F14265C013D00AE0A25 /* CryptoWalletVIPERUITests */ = {
-			isa = PBXGroup;
-			children = (
-				78860F15265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift */,
-				78860F17265C013D00AE0A25 /* Info.plist */,
-			);
-			path = CryptoWalletVIPERUITests;
 			sourceTree = "<group>";
 		};
 		78860F23265C014100AE0A25 /* Protocols */ = {
@@ -343,26 +329,6 @@
 			productReference = 78860F06265C013C00AE0A25 /* CryptoWalletVIPERTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		78860F10265C013D00AE0A25 /* CryptoWalletVIPERUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78860F20265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPERUITests" */;
-			buildPhases = (
-				9913CE14725FCEC219F89769 /* [CP] Check Pods Manifest.lock */,
-				78860F0D265C013D00AE0A25 /* Sources */,
-				78860F0E265C013D00AE0A25 /* Frameworks */,
-				78860F0F265C013D00AE0A25 /* Resources */,
-				E44C332BBA0328C4CE78E700 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78860F13265C013D00AE0A25 /* PBXTargetDependency */,
-			);
-			name = CryptoWalletVIPERUITests;
-			productName = CryptoWalletVIPERUITests;
-			productReference = 78860F11265C013D00AE0A25 /* CryptoWalletVIPERUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -376,10 +342,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					78860F05265C013C00AE0A25 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 78860EEF265C013B00AE0A25;
-					};
-					78860F10265C013D00AE0A25 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 78860EEF265C013B00AE0A25;
 					};
@@ -400,7 +362,6 @@
 			targets = (
 				78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */,
 				78860F05265C013C00AE0A25 /* CryptoWalletVIPERTests */,
-				78860F10265C013D00AE0A25 /* CryptoWalletVIPERUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -418,13 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		78860F04265C013C00AE0A25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78860F0F265C013D00AE0A25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -473,28 +427,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9913CE14725FCEC219F89769 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CDFA0644C189135EE6B31278 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,23 +447,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E44C332BBA0328C4CE78E700 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests/Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -568,15 +483,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB36BE8265FE60B00B01E5E /* MockCryptoListInteractor.swift in Sources */,
+				0FB36BED265FE61000B01E5E /* MockCryptoListViewable.swift in Sources */,
 				78860F0B265C013C00AE0A25 /* CryptoWalletVIPERTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78860F0D265C013D00AE0A25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78860F16265C013D00AE0A25 /* CryptoWalletVIPERUITests.swift in Sources */,
+				0FB36BE0265FE5FE00B01E5E /* MockCryptoListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,11 +497,6 @@
 			isa = PBXTargetDependency;
 			target = 78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */;
 			targetProxy = 78860F07265C013C00AE0A25 /* PBXContainerItemProxy */;
-		};
-		78860F13265C013D00AE0A25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78860EEF265C013B00AE0A25 /* CryptoWalletVIPER */;
-			targetProxy = 78860F12265C013D00AE0A25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -772,7 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3925K7RKU8;
 				INFOPLIST_FILE = CryptoWalletVIPERTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,7 +700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3925K7RKU8;
 				INFOPLIST_FILE = CryptoWalletVIPERTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -806,48 +711,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoWalletVIPER.app/CryptoWalletVIPER";
-			};
-			name = Release;
-		};
-		78860F21265C013D00AE0A25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 124BABA6348236E7577D106E /* Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3925K7RKU8;
-				INFOPLIST_FILE = CryptoWalletVIPERUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPERUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CryptoWalletVIPER;
-			};
-			name = Debug;
-		};
-		78860F22265C013D00AE0A25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32BD6EE398DAF3C7A75B2907 /* Pods-CryptoWalletVIPER-CryptoWalletVIPERUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3925K7RKU8;
-				INFOPLIST_FILE = CryptoWalletVIPERUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anhlq5.CryptoWalletVIPERUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CryptoWalletVIPER;
 			};
 			name = Release;
 		};
@@ -877,15 +740,6 @@
 			buildConfigurations = (
 				78860F1E265C013D00AE0A25 /* Debug */,
 				78860F1F265C013D00AE0A25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78860F20265C013D00AE0A25 /* Build configuration list for PBXNativeTarget "CryptoWalletVIPERUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78860F21265C013D00AE0A25 /* Debug */,
-				78860F22265C013D00AE0A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

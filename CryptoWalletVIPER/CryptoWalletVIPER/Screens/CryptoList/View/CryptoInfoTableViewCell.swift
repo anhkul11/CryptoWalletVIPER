@@ -39,7 +39,13 @@ final class CryptoInfoTableViewCell: UITableViewCell {
     }
     
     private func configureView() {
-        favoriteImageView.tintColor = .yellow
+        favoriteImageView.tintColor = .green
+        
+        backgroundColor = UIColor(named: ColorName.backgroundColor)
+        nameLabel.textColor = UIColor(named: ColorName.lightTextColor)
+        baseLabel.textColor = UIColor(named: ColorName.textColor)
+        saleLabel.textColor = UIColor(named: ColorName.textColor)
+        buyLabel.textColor = UIColor(named: ColorName.textColor)
     }
     
     func configureView(with viewModel: CryptoInfoViewModel, favoriteAction: ((String) -> ())? = nil) {

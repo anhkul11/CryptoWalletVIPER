@@ -90,17 +90,12 @@ extension CryptoListPresenter: CryptoListInteractableListener {
                                        isFavorite: crypto.isFavorite)
         }
         self.cryptoList = cryptoList
-        DispatchQueue.main.async { [weak view] in
-            view?.endRefreshing()
-            view?.viewModels.accept(viewModels)
-        }
+        view.endRefreshing()
+        view.viewModels.accept(viewModels)
     }
     
     func onSearchError(_ error: Error) {
-        DispatchQueue.main.async { [weak view] in
-            view?.endRefreshing()
-        }
-        print(error.localizedDescription)
+        view.endRefreshing()
     }
     
     func onDidChangeFavoriteList() {

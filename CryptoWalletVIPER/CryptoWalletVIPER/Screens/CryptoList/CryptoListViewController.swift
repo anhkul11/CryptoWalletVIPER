@@ -46,6 +46,8 @@ final class CryptoListViewController: UIViewController, CryptoListViewable {
 // MARK: - Private functions
 extension CryptoListViewController {
     private func configureView() {
+        view.backgroundColor = UIColor(named: ColorName.backgroundColor)
+        
         navigationController?.navigationBar.prefersLargeTitles = true
 
         searchBar.autocapitalizationType = .allCharacters
@@ -57,6 +59,7 @@ extension CryptoListViewController {
         tableView.register(UINib(nibName: String(describing: CryptoInfoTableViewCell.self), bundle: nil),
                            forCellReuseIdentifier: String(describing: CryptoInfoTableViewCell.self))
         tableView.refreshControl = refreshControl
+        tableView.backgroundColor = UIColor(named: ColorName.backgroundColor)
         
         refreshControl.rx.controlEvent(.valueChanged)
             .bind(to: presenter.refreshDataRelay)
@@ -100,7 +103,9 @@ extension CryptoListViewController {
     }
     
     func endRefreshing() {
-        refreshControl.endRefreshing()
+        DispatchQueue.main.async { [weak refreshControl] in
+            refreshControl?.endRefreshing()
+        }
     }
 }
 
