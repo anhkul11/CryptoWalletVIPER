@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ND-2d-1cg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Crypto List View Controller-->
+        <scene sceneID="PlK-Jq-AVC">
+            <objects>
+                <viewController id="6ND-2d-1cg" customClass="CryptoListViewController" customModule="CryptoWalletVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ok6-sg-kXv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qTq-Dl-m8Z">
+                                <rect key="frame" x="8" y="44" width="398" height="94"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aSp-e6-wtk">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-Mg-GnA">
+                                        <rect key="frame" x="0.0" y="64" width="398" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2F-hS-J2p">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="30"/>
+                                                <state key="normal" title="All"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxo-g8-0jE">
+                                                <rect key="frame" x="203" y="0.0" width="195" height="30"/>
+                                                <state key="normal" title="Favorites"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fFa-HK-Baa">
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SWN-Lj-YG6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qTq-Dl-m8Z" firstAttribute="top" secondItem="SWN-Lj-YG6" secondAttribute="top" id="6k4-g1-roe"/>
+                            <constraint firstItem="qTq-Dl-m8Z" firstAttribute="leading" secondItem="SWN-Lj-YG6" secondAttribute="leading" constant="8" id="F44-NK-aT3"/>
+                            <constraint firstItem="fFa-HK-Baa" firstAttribute="leading" secondItem="SWN-Lj-YG6" secondAttribute="leading" id="JtB-tq-85G"/>
+                            <constraint firstItem="fFa-HK-Baa" firstAttribute="top" secondItem="qTq-Dl-m8Z" secondAttribute="bottom" id="Te1-qC-GSc"/>
+                            <constraint firstAttribute="trailing" secondItem="qTq-Dl-m8Z" secondAttribute="trailing" constant="8" id="e4w-5s-bT1"/>
+                            <constraint firstItem="SWN-Lj-YG6" firstAttribute="trailing" secondItem="fFa-HK-Baa" secondAttribute="trailing" id="gIY-xD-n01"/>
+                            <constraint firstItem="SWN-Lj-YG6" firstAttribute="bottom" secondItem="fFa-HK-Baa" secondAttribute="bottom" id="msg-V4-1dD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allButton" destination="S2F-hS-J2p" id="zKm-Ze-SHw"/>
+                        <outlet property="favoritesButton" destination="Rxo-g8-0jE" id="FWK-FY-2Ig"/>
+                        <outlet property="searchBar" destination="aSp-e6-wtk" id="nnt-Pr-EPB"/>
+                        <outlet property="tableView" destination="fFa-HK-Baa" id="qxc-8b-Z1F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUN-kB-2hU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

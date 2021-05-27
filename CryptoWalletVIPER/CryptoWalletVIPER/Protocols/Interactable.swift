@@ -7,6 +7,5 @@
 
 import Foundation
 
-protocol Interactable {
-  var presenter: Presentable! { get }
+protocol Interactable: class {
 }
