@@ -32,7 +32,7 @@ Below is the list of third-party libraries that I use in the project:
 - **KingFisher**: Quick and easy download image from internet with elegant caching approach.
 
 ## **4. Build the project on local**
-After cloning the repo, please run pod install from your terminal then open CryptoWalletVIPER.xcworkspace and try to build the project using Xcode 12+. It should work without any additional steps.
+After cloning the repo, please run `pod install` from your terminal then open CryptoWalletVIPER.xcworkspace and try to build the project using Xcode 12+. It should work without any additional steps.
 
 ## **5. Checklist**
 - [x] Programming language: Swift
